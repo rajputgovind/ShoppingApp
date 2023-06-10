@@ -7,7 +7,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import PostModelChange from './PostModelChange'
+import UserModalChange from "./UserModelChange";
 const Home = () => {
   const history = useNavigate()
   const [post, setPost] = useState([]);
@@ -219,11 +220,12 @@ const Home = () => {
 
       {/* MODALS */}
 
-      <PostModal />
-
+      {/* <PostModal /> */}
+      <PostModelChange/>
       <CategoryModal />
 
-      <UserModal />
+      {/* <UserModal /> */}
+      <UserModalChange/>
       <ToastContainer/>
     </div>
   );

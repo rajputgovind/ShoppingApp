@@ -21,9 +21,9 @@ ProductRouter.get('/products', fetchAllProduct)
 ProductRouter.get('/products/single/:id', fetchProductById)
 // ProductRouter.get("/products/:category",fetchProductByCategory)
 ProductRouter.get("/products/:id",fetchProductByCategoryId)
-ProductRouter.get('/products/category/men', productMen)
-ProductRouter.get('/products/category/women', productWomen)
-ProductRouter.get('/products/category/children', productChildren)
+ProductRouter.get('/products/category/6481778f84241f241e000daa', productMen)
+ProductRouter.get('/products/category/648177b984241f241e000e59', productWomen)
+ProductRouter.get('/products/category/648177c584241f241e000e5b', productChildren)
 ProductRouter.delete('/products/delete/:id',findByIdAndDelete)
 
 export default ProductRouter
